@@ -12,6 +12,8 @@
 		C131585025250BEA00BBFA57 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C131584E25250BEA00BBFA57 /* Main.storyboard */; };
 		C131585225250BEC00BBFA57 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C131585125250BEC00BBFA57 /* Assets.xcassets */; };
 		C131585525250BEC00BBFA57 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C131585325250BEC00BBFA57 /* LaunchScreen.storyboard */; };
+		C131586325250DF900BBFA57 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C131586225250DF900BBFA57 /* Coordinator.swift */; };
+		C131586525250E3800BBFA57 /* StoryboardInstantiable.swift in Sources */ = {isa = PBXBuildFile; fileRef = C131586425250E3800BBFA57 /* StoryboardInstantiable.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,8 @@
 		C131585125250BEC00BBFA57 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C131585425250BEC00BBFA57 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C131585625250BEC00BBFA57 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C131586225250DF900BBFA57 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		C131586425250E3800BBFA57 /* StoryboardInstantiable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryboardInstantiable.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +58,64 @@
 		C131584925250BEA00BBFA57 /* TestAppForDefineSolutions */ = {
 			isa = PBXGroup;
 			children = (
-				C131584A25250BEA00BBFA57 /* AppDelegate.swift */,
+				C131586025250DCE00BBFA57 /* Screens */,
+				C131585F25250DC300BBFA57 /* Coordinator related */,
+				C131585E25250DA700BBFA57 /* Resourses */,
+				C131585D25250D9900BBFA57 /* Models */,
+				C131585C25250C2E00BBFA57 /* Application */,
 				C131584C25250BEA00BBFA57 /* ViewController.swift */,
 				C131584E25250BEA00BBFA57 /* Main.storyboard */,
 				C131585125250BEC00BBFA57 /* Assets.xcassets */,
 				C131585325250BEC00BBFA57 /* LaunchScreen.storyboard */,
-				C131585625250BEC00BBFA57 /* Info.plist */,
 			);
 			path = TestAppForDefineSolutions;
+			sourceTree = "<group>";
+		};
+		C131585C25250C2E00BBFA57 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				C131584A25250BEA00BBFA57 /* AppDelegate.swift */,
+				C131585625250BEC00BBFA57 /* Info.plist */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		C131585D25250D9900BBFA57 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		C131585E25250DA700BBFA57 /* Resourses */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Resourses;
+			sourceTree = "<group>";
+		};
+		C131585F25250DC300BBFA57 /* Coordinator related */ = {
+			isa = PBXGroup;
+			children = (
+				C131586225250DF900BBFA57 /* Coordinator.swift */,
+				C131586425250E3800BBFA57 /* StoryboardInstantiable.swift */,
+			);
+			path = "Coordinator related";
+			sourceTree = "<group>";
+		};
+		C131586025250DCE00BBFA57 /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				C131586125250DE300BBFA57 /* DashboardViewController */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		C131586125250DE300BBFA57 /* DashboardViewController */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = DashboardViewController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,6 +191,8 @@
 			files = (
 				C131584D25250BEA00BBFA57 /* ViewController.swift in Sources */,
 				C131584B25250BEA00BBFA57 /* AppDelegate.swift in Sources */,
+				C131586525250E3800BBFA57 /* StoryboardInstantiable.swift in Sources */,
+				C131586325250DF900BBFA57 /* Coordinator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -283,7 +339,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = TestAppForDefineSolutions/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/TestAppForDefineSolutions/Application/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -300,7 +356,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = TestAppForDefineSolutions/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/TestAppForDefineSolutions/Application/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
