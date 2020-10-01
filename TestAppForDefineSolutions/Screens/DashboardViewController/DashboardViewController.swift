@@ -33,12 +33,12 @@ class DashboardViewController: UIViewController, StoryboardInstantiable {
     
     private func registerReuseIdentifiers() {
         let singleItemCellNib = UINib(
-            nibName: WidgetType.singleItem.collectionViewCellReuseIdentifier,
+            nibName: "DashboardCollectionViewCell",
             bundle: nil
         )
         dashboardCollectionView.register(
             singleItemCellNib,
-            forCellWithReuseIdentifier: WidgetType.singleItem.collectionViewCellReuseIdentifier
+            forCellWithReuseIdentifier: "DashboardCollectionViewCell"
         )
     }
 
@@ -55,9 +55,8 @@ extension DashboardViewController: UICollectionViewDataSource {
 
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cellViewModel = self.viewModel.widgetsViewModels[indexPath.item]
         let cell = collectionView.dequeueReusableCell(
-                withReuseIdentifier: cellViewModel.widgetType.collectionViewCellReuseIdentifier,
+                withReuseIdentifier: "DashboardCollectionViewCell",
                 for: indexPath
             )
         return cell
