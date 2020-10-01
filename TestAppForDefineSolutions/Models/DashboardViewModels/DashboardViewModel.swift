@@ -23,22 +23,6 @@ class DashboardViewModel{
 }
 
 
-protocol WidgetViewModel{
-    var title: String { get }
-    var widgetType: WidgetType { get }
-    func widgetHeight() -> CGFloat
-}
 
-enum WidgetType {
-    case singleItem
-    case collection
-    
-    var collectionViewCellReuseIdentifier: String {
-        switch self {
-        case .singleItem:
-            return "SingleItemWidgetCollectionViewCell"
-        default:
-            return ""
-        }
-    }
-}
+
+

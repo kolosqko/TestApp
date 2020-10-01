@@ -19,6 +19,8 @@
 		C13F8CF6252641860005EFFF /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = C13F8CF5252641860005EFFF /* Utils.swift */; };
 		C13F8CF9252643E90005EFFF /* SingleItemWidgetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C13F8CF8252643E90005EFFF /* SingleItemWidgetView.swift */; };
 		C13F8CFB2526444A0005EFFF /* SingleItemWidgetView.xib in Resources */ = {isa = PBXBuildFile; fileRef = C13F8CFA2526444A0005EFFF /* SingleItemWidgetView.xib */; };
+		C13F8CFD252648D60005EFFF /* WidgetViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C13F8CFC252648D60005EFFF /* WidgetViewModel.swift */; };
+		C13F8CFF252649070005EFFF /* WidgetType.swift in Sources */ = {isa = PBXBuildFile; fileRef = C13F8CFE252649070005EFFF /* WidgetType.swift */; };
 		C1A05ED12525FDFD008C37CE /* TabBarIcons.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C1A05ED02525FDFD008C37CE /* TabBarIcons.xcassets */; };
 		C1A05ED52526077C008C37CE /* TabBarIcons.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1A05ED42526077C008C37CE /* TabBarIcons.swift */; };
 		C1A05ED825260D41008C37CE /* DashboardViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1A05ED725260D41008C37CE /* DashboardViewModel.swift */; };
@@ -45,6 +47,8 @@
 		C13F8CF5252641860005EFFF /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
 		C13F8CF8252643E90005EFFF /* SingleItemWidgetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingleItemWidgetView.swift; sourceTree = "<group>"; };
 		C13F8CFA2526444A0005EFFF /* SingleItemWidgetView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SingleItemWidgetView.xib; sourceTree = "<group>"; };
+		C13F8CFC252648D60005EFFF /* WidgetViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WidgetViewModel.swift; sourceTree = "<group>"; };
+		C13F8CFE252649070005EFFF /* WidgetType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WidgetType.swift; sourceTree = "<group>"; };
 		C1A05ED02525FDFD008C37CE /* TabBarIcons.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = TabBarIcons.xcassets; sourceTree = "<group>"; };
 		C1A05ED42526077C008C37CE /* TabBarIcons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarIcons.swift; sourceTree = "<group>"; };
 		C1A05ED725260D41008C37CE /* DashboardViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardViewModel.swift; sourceTree = "<group>"; };
@@ -188,6 +192,8 @@
 				C1A05ED925260F7A008C37CE /* SingleItemWidgetViewModel.swift */,
 				C13F8CE3252623CC0005EFFF /* CollectionWidgetViewModel.swift */,
 				C13F8CF225263FA00005EFFF /* WidgetView.swift */,
+				C13F8CFC252648D60005EFFF /* WidgetViewModel.swift */,
+				C13F8CFE252649070005EFFF /* WidgetType.swift */,
 			);
 			path = DashboardViewModels;
 			sourceTree = "<group>";
@@ -282,11 +288,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C13F8CFD252648D60005EFFF /* WidgetViewModel.swift in Sources */,
 				C1A05EDA25260F7A008C37CE /* SingleItemWidgetViewModel.swift in Sources */,
 				C131584B25250BEA00BBFA57 /* AppDelegate.swift in Sources */,
 				C1A5D7CE2525ED31008A473A /* DashboardViewController.swift in Sources */,
 				C13F8CF6252641860005EFFF /* Utils.swift in Sources */,
 				C1A5D7CA2525E5FE008A473A /* TabBarCoordinator.swift in Sources */,
+				C13F8CFF252649070005EFFF /* WidgetType.swift in Sources */,
 				C1A05ED825260D41008C37CE /* DashboardViewModel.swift in Sources */,
 				C1A5D7C72525E2DA008A473A /* AppCoordinator.swift in Sources */,
 				C1A05ED52526077C008C37CE /* TabBarIcons.swift in Sources */,

@@ -14,7 +14,7 @@ class DashboardViewController: UIViewController, StoryboardInstantiable {
     
     private let cellIdentifier = "DashboardCollectionViewCell"
     
-    private var viewModel: DashboardViewModel = DashboardViewModel()
+    private var viewModel: DashboardViewModel? = DashboardViewModel()
     
     
     override func viewDidLoad() {
@@ -51,7 +51,10 @@ class DashboardViewController: UIViewController, StoryboardInstantiable {
 extension DashboardViewController: UICollectionViewDataSource {
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return viewModel.widgetsViewModels.count
+        guard let count = viewModel?.widgetsViewModels.count else {
+            return 0
+        }
+        return count
     }
     
 
@@ -61,6 +64,12 @@ extension DashboardViewController: UICollectionViewDataSource {
                 withReuseIdentifier: cellIdentifier,
                 for: indexPath
             )
+        if
+            let cell = cell as? DashboardCollectionViewCell,
+            let viewModel = viewModel?.widgetsViewModels[indexPath.item] {
+            cell.viewModel = viewModel
+            return cell
+        }
         
         
         
@@ -74,7 +83,9 @@ extension DashboardViewController: UICollectionViewDataSource {
 
 extension DashboardViewController: UICollectionViewDelegate, UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        let cellViewModel = self.viewModel.widgetsViewModels[indexPath.item]
+        guard let cellViewModel = self.viewModel?.widgetsViewModels[indexPath.item] else {
+            return CGSize.zero
+        }
         let width = view.bounds.width
         let height = cellViewModel.widgetHeight()
         return CGSize(width: width, height: height)
