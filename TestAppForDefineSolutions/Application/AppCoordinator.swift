@@ -18,10 +18,12 @@ class AppCoordinator: Coordinator {
     init(window: UIWindow) {
         self.window = window
         self.rootViewController = UIViewController()
-        window.rootViewController = self.rootViewController
+        
     }
     
     func start() {
+        window.rootViewController = rootViewController
+        window.makeKeyAndVisible()
         let tabBarCoordinator = TabBarCoordinator(presenter: self.rootViewController)
         tabBarCoordinator.start()
         self.tabBarCoordinator = tabBarCoordinator
