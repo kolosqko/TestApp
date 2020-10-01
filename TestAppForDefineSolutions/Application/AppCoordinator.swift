@@ -13,13 +13,17 @@ class AppCoordinator: Coordinator {
     
     private let window: UIWindow
     private let rootViewController: UIViewController
+    private var tabBarCoordinator: TabBarCoordinator?
     
     init(window: UIWindow) {
         self.window = window
         self.rootViewController = UIViewController()
+        window.rootViewController = self.rootViewController
     }
     
     func start() {
-        
+        let tabBarCoordinator = TabBarCoordinator(presenter: self.rootViewController)
+        tabBarCoordinator.start()
+        self.tabBarCoordinator = tabBarCoordinator
     }
 }
