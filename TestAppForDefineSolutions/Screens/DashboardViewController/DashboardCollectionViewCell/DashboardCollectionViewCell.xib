@@ -18,24 +18,9 @@
             <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
                 <rect key="frame" x="0.0" y="0.0" width="432" height="209"/>
                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                <subviews>
-                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uHt-LS-xyB">
-                        <rect key="frame" x="0.0" y="0.0" width="432" height="209"/>
-                        <color key="backgroundColor" red="0.0" green="0.99143940210000003" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                    </view>
-                </subviews>
             </view>
-            <constraints>
-                <constraint firstAttribute="trailing" secondItem="uHt-LS-xyB" secondAttribute="trailing" id="32V-VI-dUS"/>
-                <constraint firstItem="uHt-LS-xyB" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="4Lf-gD-hPf"/>
-                <constraint firstItem="uHt-LS-xyB" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="548-YE-6WN"/>
-                <constraint firstAttribute="bottom" secondItem="uHt-LS-xyB" secondAttribute="bottom" id="mGt-cg-LeO"/>
-            </constraints>
             <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
             <size key="customSize" width="432" height="209"/>
-            <connections>
-                <outlet property="view" destination="uHt-LS-xyB" id="3bO-1S-Fhh"/>
-            </connections>
             <point key="canvasLocation" x="443.19999999999999" y="210.94452773613196"/>
         </collectionViewCell>
     </objects>

@@ -27,7 +27,7 @@ enum WidgetType {
         let xibIdentifier: String? = {
             switch self {
             case .singleItem: return "SingleItemWidgetView"
-            case .collection: return nil
+            case .collection: return "CollectionWidgetView"
             }
         }()
         guard let identifier = xibIdentifier else {

@@ -9,8 +9,6 @@
 import UIKit
 
 class DashboardCollectionViewCell: UICollectionViewCell {
-
-    @IBOutlet weak var view: UIView!
     
     private var widgetView: (UIView & WidgetView)?
     var viewModel: WidgetViewModel? {

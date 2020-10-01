@@ -18,7 +18,8 @@ class DashboardViewModel{
     
     init() {
         let vm = SingleItemWidgetViewModel(title: "WIDGET", image: UIImage(named: "DashboardTabBarIcon")!)
-        self.widgetsViewModels = [vm, vm, vm, vm, vm]
+        let cvm = CollectionWidgetViewModel()
+        self.widgetsViewModels = [cvm, cvm, cvm, vm, vm, cvm, vm, vm]
     }
 }
 
