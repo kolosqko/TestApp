@@ -151,7 +151,7 @@
 			isa = PBXGroup;
 			children = (
 				C13F8CF7252643CC0005EFFF /* Widgets */,
-				C1A05EDB2526105B008C37CE /* DashboardCollectionViewCells */,
+				C13F8CEA25263CA50005EFFF /* DashboardCollectionViewCell */,
 				C1A5D7CB2525ED06008A473A /* DashboardViewController.storyboard */,
 				C1A5D7CD2525ED31008A473A /* DashboardViewController.swift */,
 				C1A5D7CF2525EDA4008A473A /* DashboardCoordinator.swift */,
@@ -179,8 +179,7 @@
 		C13F8CF7252643CC0005EFFF /* Widgets */ = {
 			isa = PBXGroup;
 			children = (
-				C13F8CF8252643E90005EFFF /* SingleItemWidgetView.swift */,
-				C13F8CFA2526444A0005EFFF /* SingleItemWidgetView.xib */,
+				C1B27A772526510A007D5A1C /* SingleItemWidgetView */,
 			);
 			path = Widgets;
 			sourceTree = "<group>";
@@ -198,20 +197,21 @@
 			path = DashboardViewModels;
 			sourceTree = "<group>";
 		};
-		C1A05EDB2526105B008C37CE /* DashboardCollectionViewCells */ = {
-			isa = PBXGroup;
-			children = (
-				C13F8CEA25263CA50005EFFF /* DashboardCollectionViewCell */,
-			);
-			path = DashboardCollectionViewCells;
-			sourceTree = "<group>";
-		};
 		C1A5D7C82525E5E4008A473A /* TabBar */ = {
 			isa = PBXGroup;
 			children = (
 				C1A5D7C92525E5FE008A473A /* TabBarCoordinator.swift */,
 			);
 			path = TabBar;
+			sourceTree = "<group>";
+		};
+		C1B27A772526510A007D5A1C /* SingleItemWidgetView */ = {
+			isa = PBXGroup;
+			children = (
+				C13F8CF8252643E90005EFFF /* SingleItemWidgetView.swift */,
+				C13F8CFA2526444A0005EFFF /* SingleItemWidgetView.xib */,
+			);
+			path = SingleItemWidgetView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
