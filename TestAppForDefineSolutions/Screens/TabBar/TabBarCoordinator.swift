@@ -23,13 +23,14 @@ class TabBarCoordinator: Coordinator {
         self.tabBarController = UITabBarController()
         
         self.dashboardNavigationController = UINavigationController()
+        dashboardNavigationController.tabBarItem.badgeValue = "dash"
+        
         self.viewControllersInPresenter = [dashboardNavigationController]
     }
     
     func start() {
         presenter.present(tabBarController, animated: false)
         tabBarController.viewControllers = viewControllersInPresenter
-        
         let dashboardCoordinator = DashboardCoordinator(presenter: dashboardNavigationController)
         dashboardCoordinator.start()
         self.dashboardCoordinator = dashboardCoordinator
