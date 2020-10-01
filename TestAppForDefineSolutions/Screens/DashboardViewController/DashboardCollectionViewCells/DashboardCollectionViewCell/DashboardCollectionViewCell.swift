@@ -12,9 +12,15 @@ class DashboardCollectionViewCell: UICollectionViewCell {
 
     @IBOutlet weak var view: UIView!
     
+    private var widgetView: (UIView & WidgetView)?
+    
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
+        guard let widget = self.widgetView else {
+            return
+        }
+        self.addSubview(widget)
+        widget.fillInParent()
     }
 
 }
