@@ -21,11 +21,22 @@ class TabBarCoordinator: Coordinator {
     init(presenter: UIViewController) {
         self.presenter = presenter
         self.tabBarController = UITabBarController()
-        
+        tabBarController.tabBar.isTranslucent = false
+
         self.dashboardNavigationController = UINavigationController()
-        dashboardNavigationController.tabBarItem.badgeValue = "dash"
+        dashboardNavigationController.tabBarItem.image = UIImage(named: TabBarIcons.dashboardIcon.iconImageName)
+// ----------
         
-        self.viewControllersInPresenter = [dashboardNavigationController]
+        let nvc = UIViewController()
+        nvc.tabBarItem.image = UIImage(named: TabBarIcons.notificationIcon.iconImageName)
+        let fvc = UIViewController()
+        fvc.tabBarItem.image = UIImage(named: TabBarIcons.favoritesIcon.iconImageName)
+        let uvc = UIViewController()
+        uvc.tabBarItem.image = UIImage(named: TabBarIcons.usersIcon.iconImageName)
+        
+// -----------
+        
+        self.viewControllersInPresenter = [dashboardNavigationController, nvc, fvc, uvc]
     }
     
     func start() {
