@@ -12,7 +12,7 @@ class DashboardViewController: UIViewController, StoryboardInstantiable {
 
     @IBOutlet weak var dashboardCollectionView: UICollectionView!
     
-    private var viewModel: DashboardViewModel!
+    private var viewModel: DashboardViewModel = DashboardViewModel()
     
     
     override func viewDidLoad() {
@@ -20,7 +20,8 @@ class DashboardViewController: UIViewController, StoryboardInstantiable {
         self.navigationController?.isNavigationBarHidden = true
         registerReuseIdentifiers()
         dashboardCollectionView.dataSource = self
-        
+        dashboardCollectionView.delegate = self
+
 
     }
     
@@ -51,6 +52,8 @@ extension DashboardViewController: UICollectionViewDataSource {
         return viewModel.widgetsViewModels.count
     }
     
+
+    
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cellViewModel = self.viewModel.widgetsViewModels[indexPath.item]
         let cell = collectionView.dequeueReusableCell(
@@ -62,4 +65,14 @@ extension DashboardViewController: UICollectionViewDataSource {
     }
     
     
+}
+
+
+extension DashboardViewController: UICollectionViewDelegate, UICollectionViewDelegateFlowLayout {
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        let cellViewModel = self.viewModel.widgetsViewModels[indexPath.item]
+        let width = view.bounds.width
+        let height = cellViewModel.widgetHeight()
+        return CGSize(width: width, height: height)
+    }
 }

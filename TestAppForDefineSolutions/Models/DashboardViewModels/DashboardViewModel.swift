@@ -15,12 +15,18 @@ class DashboardViewModel{
     init(widgets: [WidgetViewModel]) {
         self.widgetsViewModels = widgets
     }
+    
+    init() {
+        let vm = SingleItemWidgetViewModel(title: "WIDGET")
+        self.widgetsViewModels = [vm, vm, vm, vm, vm]
+    }
 }
 
 
 protocol WidgetViewModel{
     var title: String { get }
     var widgetType: WidgetType { get }
+    func widgetHeight() -> CGFloat
 }
 
 enum WidgetType {

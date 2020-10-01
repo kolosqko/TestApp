@@ -21,4 +21,8 @@ class SingleItemWidgetViewModel: WidgetViewModel {
         self.title = title
         self.image = image
     }
+    
+    func widgetHeight() -> CGFloat {
+        return 60
+    }
 }
