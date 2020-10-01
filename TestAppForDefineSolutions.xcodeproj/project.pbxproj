@@ -12,6 +12,8 @@
 		C131585525250BEC00BBFA57 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C131585325250BEC00BBFA57 /* LaunchScreen.storyboard */; };
 		C131586325250DF900BBFA57 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C131586225250DF900BBFA57 /* Coordinator.swift */; };
 		C131586525250E3800BBFA57 /* StoryboardInstantiable.swift in Sources */ = {isa = PBXBuildFile; fileRef = C131586425250E3800BBFA57 /* StoryboardInstantiable.swift */; };
+		C1A05ED12525FDFD008C37CE /* TabBarIcons.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C1A05ED02525FDFD008C37CE /* TabBarIcons.xcassets */; };
+		C1A05ED52526077C008C37CE /* TabBarIcons.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1A05ED42526077C008C37CE /* TabBarIcons.swift */; };
 		C1A5D7C72525E2DA008A473A /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1A5D7C62525E2DA008A473A /* AppCoordinator.swift */; };
 		C1A5D7CA2525E5FE008A473A /* TabBarCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1A5D7C92525E5FE008A473A /* TabBarCoordinator.swift */; };
 		C1A5D7CC2525ED06008A473A /* DashboardViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C1A5D7CB2525ED06008A473A /* DashboardViewController.storyboard */; };
@@ -27,6 +29,8 @@
 		C131585625250BEC00BBFA57 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C131586225250DF900BBFA57 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
 		C131586425250E3800BBFA57 /* StoryboardInstantiable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryboardInstantiable.swift; sourceTree = "<group>"; };
+		C1A05ED02525FDFD008C37CE /* TabBarIcons.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = TabBarIcons.xcassets; sourceTree = "<group>"; };
+		C1A05ED42526077C008C37CE /* TabBarIcons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarIcons.swift; sourceTree = "<group>"; };
 		C1A5D7C62525E2DA008A473A /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
 		C1A5D7C92525E5FE008A473A /* TabBarCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarCoordinator.swift; sourceTree = "<group>"; };
 		C1A5D7CB2525ED06008A473A /* DashboardViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = DashboardViewController.storyboard; sourceTree = "<group>"; };
@@ -95,6 +99,8 @@
 		C131585E25250DA700BBFA57 /* Resourses */ = {
 			isa = PBXGroup;
 			children = (
+				C1A05ED02525FDFD008C37CE /* TabBarIcons.xcassets */,
+				C1A05ED42526077C008C37CE /* TabBarIcons.swift */,
 			);
 			path = Resourses;
 			sourceTree = "<group>";
@@ -193,6 +199,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C1A05ED12525FDFD008C37CE /* TabBarIcons.xcassets in Resources */,
 				C1A5D7CC2525ED06008A473A /* DashboardViewController.storyboard in Resources */,
 				C131585525250BEC00BBFA57 /* LaunchScreen.storyboard in Resources */,
 				C131585225250BEC00BBFA57 /* Assets.xcassets in Resources */,
@@ -210,6 +217,7 @@
 				C1A5D7CE2525ED31008A473A /* DashboardViewController.swift in Sources */,
 				C1A5D7CA2525E5FE008A473A /* TabBarCoordinator.swift in Sources */,
 				C1A5D7C72525E2DA008A473A /* AppCoordinator.swift in Sources */,
+				C1A05ED52526077C008C37CE /* TabBarIcons.swift in Sources */,
 				C131586525250E3800BBFA57 /* StoryboardInstantiable.swift in Sources */,
 				C131586325250DF900BBFA57 /* Coordinator.swift in Sources */,
 				C1A5D7D02525EDA4008A473A /* DashboardCoordinator.swift in Sources */,
