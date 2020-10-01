@@ -9,7 +9,7 @@
 import Foundation
 import UIKit
 
-class SingleItemWidgetViewModel: WidgetViewModel {
+struct SingleItemWidgetViewModel: WidgetViewModel {
     var title: String
     var widgetType: WidgetType = .singleItem
     var image: UIImage?

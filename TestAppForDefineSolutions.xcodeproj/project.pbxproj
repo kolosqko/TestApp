@@ -12,6 +12,9 @@
 		C131585525250BEC00BBFA57 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C131585325250BEC00BBFA57 /* LaunchScreen.storyboard */; };
 		C131586325250DF900BBFA57 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C131586225250DF900BBFA57 /* Coordinator.swift */; };
 		C131586525250E3800BBFA57 /* StoryboardInstantiable.swift in Sources */ = {isa = PBXBuildFile; fileRef = C131586425250E3800BBFA57 /* StoryboardInstantiable.swift */; };
+		C13F8CE4252623CC0005EFFF /* CollectionWidgetViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C13F8CE3252623CC0005EFFF /* CollectionWidgetViewModel.swift */; };
+		C13F8CE8252625D60005EFFF /* CollectionWidgetCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C13F8CE6252625D60005EFFF /* CollectionWidgetCollectionViewCell.swift */; };
+		C13F8CE9252625D60005EFFF /* CollectionWidgetCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C13F8CE7252625D60005EFFF /* CollectionWidgetCollectionViewCell.xib */; };
 		C1A05ED12525FDFD008C37CE /* TabBarIcons.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C1A05ED02525FDFD008C37CE /* TabBarIcons.xcassets */; };
 		C1A05ED52526077C008C37CE /* TabBarIcons.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1A05ED42526077C008C37CE /* TabBarIcons.swift */; };
 		C1A05ED825260D41008C37CE /* DashboardViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1A05ED725260D41008C37CE /* DashboardViewModel.swift */; };
@@ -33,6 +36,9 @@
 		C131585625250BEC00BBFA57 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C131586225250DF900BBFA57 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
 		C131586425250E3800BBFA57 /* StoryboardInstantiable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryboardInstantiable.swift; sourceTree = "<group>"; };
+		C13F8CE3252623CC0005EFFF /* CollectionWidgetViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionWidgetViewModel.swift; sourceTree = "<group>"; };
+		C13F8CE6252625D60005EFFF /* CollectionWidgetCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionWidgetCollectionViewCell.swift; sourceTree = "<group>"; };
+		C13F8CE7252625D60005EFFF /* CollectionWidgetCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CollectionWidgetCollectionViewCell.xib; sourceTree = "<group>"; };
 		C1A05ED02525FDFD008C37CE /* TabBarIcons.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = TabBarIcons.xcassets; sourceTree = "<group>"; };
 		C1A05ED42526077C008C37CE /* TabBarIcons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarIcons.swift; sourceTree = "<group>"; };
 		C1A05ED725260D41008C37CE /* DashboardViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardViewModel.swift; sourceTree = "<group>"; };
@@ -143,11 +149,21 @@
 			path = DashboardViewController;
 			sourceTree = "<group>";
 		};
+		C13F8CE5252625A90005EFFF /* CollectionWidgetCell */ = {
+			isa = PBXGroup;
+			children = (
+				C13F8CE6252625D60005EFFF /* CollectionWidgetCollectionViewCell.swift */,
+				C13F8CE7252625D60005EFFF /* CollectionWidgetCollectionViewCell.xib */,
+			);
+			path = CollectionWidgetCell;
+			sourceTree = "<group>";
+		};
 		C1A05ED625260D1B008C37CE /* DashboardViewModels */ = {
 			isa = PBXGroup;
 			children = (
 				C1A05ED725260D41008C37CE /* DashboardViewModel.swift */,
 				C1A05ED925260F7A008C37CE /* SingleItemWidgetViewModel.swift */,
+				C13F8CE3252623CC0005EFFF /* CollectionWidgetViewModel.swift */,
 			);
 			path = DashboardViewModels;
 			sourceTree = "<group>";
@@ -155,6 +171,7 @@
 		C1A05EDB2526105B008C37CE /* DashboardCollectionViewCells */ = {
 			isa = PBXGroup;
 			children = (
+				C13F8CE5252625A90005EFFF /* CollectionWidgetCell */,
 				C1A05EDC25261072008C37CE /* SingleItemWidgetCell */,
 			);
 			path = DashboardCollectionViewCells;
@@ -235,6 +252,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C13F8CE9252625D60005EFFF /* CollectionWidgetCollectionViewCell.xib in Resources */,
 				C1A05EE02526109C008C37CE /* SingleItemWidgetCollectionViewCell.xib in Resources */,
 				C1A05ED12525FDFD008C37CE /* TabBarIcons.xcassets in Resources */,
 				C1A5D7CC2525ED06008A473A /* DashboardViewController.storyboard in Resources */,
@@ -259,7 +277,9 @@
 				C1A5D7C72525E2DA008A473A /* AppCoordinator.swift in Sources */,
 				C1A05ED52526077C008C37CE /* TabBarIcons.swift in Sources */,
 				C131586525250E3800BBFA57 /* StoryboardInstantiable.swift in Sources */,
+				C13F8CE4252623CC0005EFFF /* CollectionWidgetViewModel.swift in Sources */,
 				C131586325250DF900BBFA57 /* Coordinator.swift in Sources */,
+				C13F8CE8252625D60005EFFF /* CollectionWidgetCollectionViewCell.swift in Sources */,
 				C1A5D7D02525EDA4008A473A /* DashboardCoordinator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
