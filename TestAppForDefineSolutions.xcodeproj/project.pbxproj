@@ -14,6 +14,9 @@
 		C131586525250E3800BBFA57 /* StoryboardInstantiable.swift in Sources */ = {isa = PBXBuildFile; fileRef = C131586425250E3800BBFA57 /* StoryboardInstantiable.swift */; };
 		C1A5D7C72525E2DA008A473A /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1A5D7C62525E2DA008A473A /* AppCoordinator.swift */; };
 		C1A5D7CA2525E5FE008A473A /* TabBarCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1A5D7C92525E5FE008A473A /* TabBarCoordinator.swift */; };
+		C1A5D7CC2525ED06008A473A /* DashboardViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C1A5D7CB2525ED06008A473A /* DashboardViewController.storyboard */; };
+		C1A5D7CE2525ED31008A473A /* DashboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1A5D7CD2525ED31008A473A /* DashboardViewController.swift */; };
+		C1A5D7D02525EDA4008A473A /* DashboardCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1A5D7CF2525EDA4008A473A /* DashboardCoordinator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +29,9 @@
 		C131586425250E3800BBFA57 /* StoryboardInstantiable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryboardInstantiable.swift; sourceTree = "<group>"; };
 		C1A5D7C62525E2DA008A473A /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
 		C1A5D7C92525E5FE008A473A /* TabBarCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarCoordinator.swift; sourceTree = "<group>"; };
+		C1A5D7CB2525ED06008A473A /* DashboardViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = DashboardViewController.storyboard; sourceTree = "<group>"; };
+		C1A5D7CD2525ED31008A473A /* DashboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardViewController.swift; sourceTree = "<group>"; };
+		C1A5D7CF2525EDA4008A473A /* DashboardCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardCoordinator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,6 +120,9 @@
 		C131586125250DE300BBFA57 /* DashboardViewController */ = {
 			isa = PBXGroup;
 			children = (
+				C1A5D7CB2525ED06008A473A /* DashboardViewController.storyboard */,
+				C1A5D7CD2525ED31008A473A /* DashboardViewController.swift */,
+				C1A5D7CF2525EDA4008A473A /* DashboardCoordinator.swift */,
 			);
 			path = DashboardViewController;
 			sourceTree = "<group>";
@@ -184,6 +193,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C1A5D7CC2525ED06008A473A /* DashboardViewController.storyboard in Resources */,
 				C131585525250BEC00BBFA57 /* LaunchScreen.storyboard in Resources */,
 				C131585225250BEC00BBFA57 /* Assets.xcassets in Resources */,
 			);
@@ -197,10 +207,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				C131584B25250BEA00BBFA57 /* AppDelegate.swift in Sources */,
+				C1A5D7CE2525ED31008A473A /* DashboardViewController.swift in Sources */,
 				C1A5D7CA2525E5FE008A473A /* TabBarCoordinator.swift in Sources */,
 				C1A5D7C72525E2DA008A473A /* AppCoordinator.swift in Sources */,
 				C131586525250E3800BBFA57 /* StoryboardInstantiable.swift in Sources */,
 				C131586325250DF900BBFA57 /* Coordinator.swift in Sources */,
+				C1A5D7D02525EDA4008A473A /* DashboardCoordinator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
