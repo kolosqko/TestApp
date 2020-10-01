@@ -17,6 +17,8 @@
 		C13F8CEE25263CCF0005EFFF /* DashboardCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C13F8CEC25263CCF0005EFFF /* DashboardCollectionViewCell.xib */; };
 		C13F8CF325263FA00005EFFF /* WidgetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C13F8CF225263FA00005EFFF /* WidgetView.swift */; };
 		C13F8CF6252641860005EFFF /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = C13F8CF5252641860005EFFF /* Utils.swift */; };
+		C13F8CF9252643E90005EFFF /* SingleItemWidgetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C13F8CF8252643E90005EFFF /* SingleItemWidgetView.swift */; };
+		C13F8CFB2526444A0005EFFF /* SingleItemWidgetView.xib in Resources */ = {isa = PBXBuildFile; fileRef = C13F8CFA2526444A0005EFFF /* SingleItemWidgetView.xib */; };
 		C1A05ED12525FDFD008C37CE /* TabBarIcons.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C1A05ED02525FDFD008C37CE /* TabBarIcons.xcassets */; };
 		C1A05ED52526077C008C37CE /* TabBarIcons.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1A05ED42526077C008C37CE /* TabBarIcons.swift */; };
 		C1A05ED825260D41008C37CE /* DashboardViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1A05ED725260D41008C37CE /* DashboardViewModel.swift */; };
@@ -41,6 +43,8 @@
 		C13F8CEC25263CCF0005EFFF /* DashboardCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DashboardCollectionViewCell.xib; sourceTree = "<group>"; };
 		C13F8CF225263FA00005EFFF /* WidgetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WidgetView.swift; sourceTree = "<group>"; };
 		C13F8CF5252641860005EFFF /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
+		C13F8CF8252643E90005EFFF /* SingleItemWidgetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingleItemWidgetView.swift; sourceTree = "<group>"; };
+		C13F8CFA2526444A0005EFFF /* SingleItemWidgetView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SingleItemWidgetView.xib; sourceTree = "<group>"; };
 		C1A05ED02525FDFD008C37CE /* TabBarIcons.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = TabBarIcons.xcassets; sourceTree = "<group>"; };
 		C1A05ED42526077C008C37CE /* TabBarIcons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarIcons.swift; sourceTree = "<group>"; };
 		C1A05ED725260D41008C37CE /* DashboardViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardViewModel.swift; sourceTree = "<group>"; };
@@ -142,6 +146,7 @@
 		C131586125250DE300BBFA57 /* DashboardViewController */ = {
 			isa = PBXGroup;
 			children = (
+				C13F8CF7252643CC0005EFFF /* Widgets */,
 				C1A05EDB2526105B008C37CE /* DashboardCollectionViewCells */,
 				C1A5D7CB2525ED06008A473A /* DashboardViewController.storyboard */,
 				C1A5D7CD2525ED31008A473A /* DashboardViewController.swift */,
@@ -165,6 +170,15 @@
 				C13F8CF5252641860005EFFF /* Utils.swift */,
 			);
 			path = "UI extentions";
+			sourceTree = "<group>";
+		};
+		C13F8CF7252643CC0005EFFF /* Widgets */ = {
+			isa = PBXGroup;
+			children = (
+				C13F8CF8252643E90005EFFF /* SingleItemWidgetView.swift */,
+				C13F8CFA2526444A0005EFFF /* SingleItemWidgetView.xib */,
+			);
+			path = Widgets;
 			sourceTree = "<group>";
 		};
 		C1A05ED625260D1B008C37CE /* DashboardViewModels */ = {
@@ -255,6 +269,7 @@
 				C13F8CEE25263CCF0005EFFF /* DashboardCollectionViewCell.xib in Resources */,
 				C1A05ED12525FDFD008C37CE /* TabBarIcons.xcassets in Resources */,
 				C1A5D7CC2525ED06008A473A /* DashboardViewController.storyboard in Resources */,
+				C13F8CFB2526444A0005EFFF /* SingleItemWidgetView.xib in Resources */,
 				C131585525250BEC00BBFA57 /* LaunchScreen.storyboard in Resources */,
 				C131585225250BEC00BBFA57 /* Assets.xcassets in Resources */,
 			);
@@ -278,6 +293,7 @@
 				C131586525250E3800BBFA57 /* StoryboardInstantiable.swift in Sources */,
 				C13F8CE4252623CC0005EFFF /* CollectionWidgetViewModel.swift in Sources */,
 				C131586325250DF900BBFA57 /* Coordinator.swift in Sources */,
+				C13F8CF9252643E90005EFFF /* SingleItemWidgetView.swift in Sources */,
 				C13F8CED25263CCF0005EFFF /* DashboardCollectionViewCell.swift in Sources */,
 				C1A5D7D02525EDA4008A473A /* DashboardCoordinator.swift in Sources */,
 				C13F8CF325263FA00005EFFF /* WidgetView.swift in Sources */,

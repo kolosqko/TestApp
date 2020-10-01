@@ -10,6 +10,6 @@ import Foundation
 import UIKit
 
 protocol WidgetView {
-    var viewModel: WidgetViewModel { get }
+    var viewModel: WidgetViewModel? { get set }
     func setupWidget()
 }
