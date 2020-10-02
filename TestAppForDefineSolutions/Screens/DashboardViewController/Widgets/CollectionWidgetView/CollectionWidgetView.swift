@@ -22,6 +22,7 @@ class CollectionWidgetView: UIView, WidgetView  {
         registerReusebleCell()
         collectionView.dataSource = self
         collectionView.delegate = self
+        titleLabel.text = viewModel?.title
         
     }
     

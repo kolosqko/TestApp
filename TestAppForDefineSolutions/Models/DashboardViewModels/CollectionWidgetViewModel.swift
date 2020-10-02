@@ -32,8 +32,8 @@ struct CollectionWidgetViewModel: WidgetViewModel {
         self.items = [item,item,item]
     }
     
-    func widgetHeight() -> CGFloat {
-        return 300
+    func widgetProportions() -> CGFloat {
+        return 0.7
     }
 }
 

@@ -14,15 +14,6 @@ enum WidgetType {
     case singleItem
     case collection
     
-    var collectionViewCellReuseIdentifier: String {
-        switch self {
-        case .singleItem:
-            return "SingleItemWidgetCollectionViewCell"
-        default:
-            return ""
-        }
-    }
-    
     var widgetView: (UIView & WidgetView)? {
         let xibIdentifier: String? = {
             switch self {

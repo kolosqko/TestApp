@@ -34,6 +34,7 @@
 		C1B27A7C252651B9007D5A1C /* CollectionWidgetView.xib in Resources */ = {isa = PBXBuildFile; fileRef = C1B27A7B252651B9007D5A1C /* CollectionWidgetView.xib */; };
 		C1B27A8025265C4A007D5A1C /* CollectionWidgetViewCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1B27A7E25265C4A007D5A1C /* CollectionWidgetViewCollectionViewCell.swift */; };
 		C1B27A8125265C4A007D5A1C /* CollectionWidgetViewCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C1B27A7F25265C4A007D5A1C /* CollectionWidgetViewCollectionViewCell.xib */; };
+		C1CA2FC025273576008D2EFD /* BooksAssets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C1CA2FBF25273576008D2EFD /* BooksAssets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -66,6 +67,7 @@
 		C1B27A7B252651B9007D5A1C /* CollectionWidgetView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CollectionWidgetView.xib; sourceTree = "<group>"; };
 		C1B27A7E25265C4A007D5A1C /* CollectionWidgetViewCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionWidgetViewCollectionViewCell.swift; sourceTree = "<group>"; };
 		C1B27A7F25265C4A007D5A1C /* CollectionWidgetViewCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CollectionWidgetViewCollectionViewCell.xib; sourceTree = "<group>"; };
+		C1CA2FBF25273576008D2EFD /* BooksAssets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = BooksAssets.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -133,6 +135,7 @@
 			children = (
 				C1A05ED02525FDFD008C37CE /* TabBarIcons.xcassets */,
 				C1A05ED42526077C008C37CE /* TabBarIcons.swift */,
+				C1CA2FBF25273576008D2EFD /* BooksAssets.xcassets */,
 			);
 			path = Resourses;
 			sourceTree = "<group>";
@@ -303,6 +306,7 @@
 				C13F8CEE25263CCF0005EFFF /* DashboardCollectionViewCell.xib in Resources */,
 				C1A05ED12525FDFD008C37CE /* TabBarIcons.xcassets in Resources */,
 				C1A5D7CC2525ED06008A473A /* DashboardViewController.storyboard in Resources */,
+				C1CA2FC025273576008D2EFD /* BooksAssets.xcassets in Resources */,
 				C13F8CFB2526444A0005EFFF /* SingleItemWidgetView.xib in Resources */,
 				C1B27A7C252651B9007D5A1C /* CollectionWidgetView.xib in Resources */,
 				C1B27A8125265C4A007D5A1C /* CollectionWidgetViewCollectionViewCell.xib in Resources */,
