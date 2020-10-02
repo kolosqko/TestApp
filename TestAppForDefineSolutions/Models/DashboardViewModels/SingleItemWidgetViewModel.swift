@@ -26,6 +26,6 @@ struct SingleItemWidgetViewModel: WidgetViewModel {
         guard let image = self.image else {
             return 0.5
         }
-        return (image.size.height + 50) / image.size.width
+        return (image.size.height + 40) / image.size.width
     }
 }

@@ -33,7 +33,7 @@ struct CollectionWidgetViewModel: WidgetViewModel {
     }
     
     func widgetProportions() -> CGFloat {
-        return 300
+        return 0.7
     }
 }
 
