@@ -87,7 +87,7 @@ extension DashboardViewController: UICollectionViewDelegate, UICollectionViewDel
             return CGSize.zero
         }
         let width = view.bounds.width
-        let height = width * cellViewModel.widgetProportions()
+        let height = width * cellViewModel.widgetType.widgetProportions
         return CGSize(width: width, height: height)
     }
 }
