@@ -17,7 +17,7 @@
             <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
             <subviews>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hOm-p6-NwY">
-                    <rect key="frame" x="0.0" y="0.0" width="42" height="21"/>
+                    <rect key="frame" x="0.0" y="0.0" width="472" height="21"/>
                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
@@ -28,6 +28,7 @@
             </subviews>
             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
             <constraints>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="hOm-p6-NwY" secondAttribute="trailing" id="MhA-Pb-6ON"/>
                 <constraint firstItem="hOm-p6-NwY" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="Onp-VA-L4k"/>
                 <constraint firstItem="hOm-p6-NwY" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="PpP-tu-tDZ"/>
                 <constraint firstItem="SOI-qQ-4ex" firstAttribute="top" secondItem="hOm-p6-NwY" secondAttribute="bottom" constant="10" id="cEn-jv-SLh"/>

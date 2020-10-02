@@ -17,9 +17,16 @@ class DashboardViewModel{
     }
     
     init() {
-        let vm = SingleItemWidgetViewModel(title: "WIDGET", image: UIImage(named: "DashboardTabBarIcon")!)
-        let cvm = CollectionWidgetViewModel()
-        self.widgetsViewModels = [cvm, cvm, cvm, vm, vm, cvm, vm, vm]
+        self.widgetsViewModels = DashboardViewModel.createViewModel()
+    }
+    
+    // method to create view models for demo
+    static private func createViewModel() -> [WidgetViewModel] {
+        let discoverSWidget = SingleItemWidgetViewModel(title: "Discover", image: UIImage(named: "TheLightBetweenOceansImage")!)
+        let popularWidget = CollectionWidgetViewModel(title: "Popular", items: [])
+        let recommendedWidget = CollectionWidgetViewModel(title: "Recommended", items: [])
+
+        return [discoverSWidget, popularWidget, recommendedWidget]
     }
 }
 
