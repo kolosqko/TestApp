@@ -23,6 +23,6 @@ struct SingleItemWidgetViewModel: WidgetViewModel {
     }
     
     func widgetHeight() -> CGFloat {
-        return 60
+        return 260
     }
 }

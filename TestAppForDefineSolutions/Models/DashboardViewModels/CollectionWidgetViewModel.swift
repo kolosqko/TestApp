@@ -26,8 +26,14 @@ struct CollectionWidgetViewModel: WidgetViewModel {
         self.items = items
     }
     
+    init() {
+        self.title = "testing"
+        let item = Book(title: "book", author: "author", poster: UIImage(named: "FavoritesTabBarIcon"))
+        self.items = [item,item,item]
+    }
+    
     func widgetHeight() -> CGFloat {
-        return 100
+        return 300
     }
 }
 
@@ -36,9 +42,9 @@ struct CollectionWidgetViewModel: WidgetViewModel {
 struct Book {
     let title: String
     let author: String
-    let poster: UIImage
+    let poster: UIImage?
     
-    init(title: String, author: String, poster: UIImage) {
+    init(title: String, author: String, poster: UIImage?) {
         self.title = title
         self.author = author
         self.poster = poster

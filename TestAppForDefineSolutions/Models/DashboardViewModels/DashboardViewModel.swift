@@ -17,28 +17,13 @@ class DashboardViewModel{
     }
     
     init() {
-        let vm = SingleItemWidgetViewModel(title: "WIDGET")
-        self.widgetsViewModels = [vm, vm, vm, vm, vm]
+        let vm = SingleItemWidgetViewModel(title: "WIDGET", image: UIImage(named: "DashboardTabBarIcon")!)
+        let cvm = CollectionWidgetViewModel()
+        self.widgetsViewModels = [cvm, cvm, cvm, vm, vm, cvm, vm, vm]
     }
 }
 
 
-protocol WidgetViewModel{
-    var title: String { get }
-    var widgetType: WidgetType { get }
-    func widgetHeight() -> CGFloat
-}
 
-enum WidgetType {
-    case singleItem
-    case collection
-    
-    var collectionViewCellReuseIdentifier: String {
-        switch self {
-        case .singleItem:
-            return "SingleItemWidgetCollectionViewCell"
-        default:
-            return ""
-        }
-    }
-}
+
+

@@ -12,7 +12,9 @@ class DashboardViewController: UIViewController, StoryboardInstantiable {
 
     @IBOutlet weak var dashboardCollectionView: UICollectionView!
     
-    private var viewModel: DashboardViewModel = DashboardViewModel()
+    private let cellIdentifier = "DashboardCollectionViewCell"
+    
+    private var viewModel: DashboardViewModel? = DashboardViewModel()
     
     
     override func viewDidLoad() {
@@ -33,12 +35,12 @@ class DashboardViewController: UIViewController, StoryboardInstantiable {
     
     private func registerReuseIdentifiers() {
         let singleItemCellNib = UINib(
-            nibName: WidgetType.singleItem.collectionViewCellReuseIdentifier,
+            nibName: cellIdentifier,
             bundle: nil
         )
         dashboardCollectionView.register(
             singleItemCellNib,
-            forCellWithReuseIdentifier: WidgetType.singleItem.collectionViewCellReuseIdentifier
+            forCellWithReuseIdentifier: cellIdentifier
         )
     }
 
@@ -49,17 +51,28 @@ class DashboardViewController: UIViewController, StoryboardInstantiable {
 extension DashboardViewController: UICollectionViewDataSource {
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return viewModel.widgetsViewModels.count
+        guard let count = viewModel?.widgetsViewModels.count else {
+            return 0
+        }
+        return count
     }
     
 
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cellViewModel = self.viewModel.widgetsViewModels[indexPath.item]
         let cell = collectionView.dequeueReusableCell(
-                withReuseIdentifier: cellViewModel.widgetType.collectionViewCellReuseIdentifier,
+                withReuseIdentifier: cellIdentifier,
                 for: indexPath
             )
+        if
+            let cell = cell as? DashboardCollectionViewCell,
+            let viewModel = viewModel?.widgetsViewModels[indexPath.item] {
+            cell.viewModel = viewModel
+            return cell
+        }
+        
+        
+        
         return cell
         
     }
@@ -70,7 +83,9 @@ extension DashboardViewController: UICollectionViewDataSource {
 
 extension DashboardViewController: UICollectionViewDelegate, UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        let cellViewModel = self.viewModel.widgetsViewModels[indexPath.item]
+        guard let cellViewModel = self.viewModel?.widgetsViewModels[indexPath.item] else {
+            return CGSize.zero
+        }
         let width = view.bounds.width
         let height = cellViewModel.widgetHeight()
         return CGSize(width: width, height: height)
