@@ -24,6 +24,7 @@ class SingleItemWidgetView: UIView, WidgetView {
         }
         titleLabel.text = viewModel.title
         imageView.image = viewModel.image
+        imageView.contentMode = .scaleToFill
     }
 
 }
