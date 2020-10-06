@@ -13,5 +13,4 @@ import UIKit
 protocol WidgetViewModel{
     var title: String { get }
     var widgetType: WidgetType { get }
-    func widgetProportions() -> CGFloat
 }

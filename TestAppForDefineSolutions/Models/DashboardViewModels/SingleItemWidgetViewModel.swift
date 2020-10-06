@@ -22,10 +22,5 @@ struct SingleItemWidgetViewModel: WidgetViewModel {
         self.image = image
     }
     
-    func widgetProportions() -> CGFloat {
-        guard let image = self.image else {
-            return 0.5
-        }
-        return (image.size.height + 40) / image.size.width
-    }
+    
 }

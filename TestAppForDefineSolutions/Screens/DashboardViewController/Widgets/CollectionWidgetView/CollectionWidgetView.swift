@@ -75,7 +75,7 @@ extension CollectionWidgetView: UICollectionViewDataSource {
 extension CollectionWidgetView: UICollectionViewDelegate, UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         let height = collectionView.bounds.height
-        let width = 200 as CGFloat
+        let width = height / 1.8
         return CGSize(width: width, height: height)
     }
 }

@@ -30,4 +30,11 @@ enum WidgetType {
         }
         return view as? (UIView & WidgetView)
     }
+    
+    var widgetProportions: CGFloat {
+        switch self {
+        case .singleItem: return 685 / 1028
+        case .collection: return 764.8 / 1028
+        }
+    }
 }
