@@ -8,6 +8,11 @@
 
 import UIKit
 
+protocol DashboardViewControllerDelegate {
+    func showBookInfo(book: Book)
+}
+
+
 class DashboardViewController: UIViewController, StoryboardInstantiable {
 
     @IBOutlet weak var dashboardCollectionView: UICollectionView!
@@ -15,6 +20,8 @@ class DashboardViewController: UIViewController, StoryboardInstantiable {
     private let cellIdentifier = "DashboardCollectionViewCell"
     
     private var viewModel: DashboardViewModel? = DashboardViewModel()
+    
+    var delegate: DashboardViewControllerDelegate?
     
     
     override func viewDidLoad() {
@@ -72,6 +79,9 @@ extension DashboardViewController: UICollectionViewDataSource {
             let cell = cell as? DashboardCollectionViewCell,
             let viewModel = viewModel?.widgetsViewModels[indexPath.item] {
             cell.viewModel = viewModel
+            cell.delegate = self
+            
+            cell.loadWidget()
             return cell
         }
         
@@ -93,5 +103,14 @@ extension DashboardViewController: UICollectionViewDelegate, UICollectionViewDel
         let width = view.bounds.width
         let height = width * cellViewModel.widgetType.widgetProportions
         return CGSize(width: width, height: height)
+    }
+}
+
+
+
+extension DashboardViewController: WidgetViewDelegate {
+    
+    func bookWasSelected(book: Book) {
+        self.delegate?.showBookInfo(book: book)
     }
 }

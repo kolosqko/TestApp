@@ -11,5 +11,6 @@ import UIKit
 
 protocol WidgetView {
     var viewModel: WidgetViewModel? { get set }
+    var delegate: WidgetViewDelegate? { get set }
     func setupWidget()
 }

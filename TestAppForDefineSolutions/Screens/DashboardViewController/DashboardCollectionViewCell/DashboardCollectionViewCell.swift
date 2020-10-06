@@ -11,24 +11,19 @@ import UIKit
 class DashboardCollectionViewCell: UICollectionViewCell {
     
     private var widgetView: (UIView & WidgetView)?
-    var viewModel: WidgetViewModel? {
-        didSet {
-            loadWidget()
-        }
-    }
+    var viewModel: WidgetViewModel? 
+    var delegate: WidgetViewDelegate?
     
     
     
-    private func loadWidget(){
-        guard let viewModel = self.viewModel else {
-            return
-        }
+    func loadWidget(){
         
-        guard var widget = viewModel.widgetType.widgetView else {
+        guard var widget = viewModel?.widgetType.widgetView else {
             return
         }
         
         widget.viewModel = viewModel
+        widget.delegate = delegate
         widget.setupWidget()
         self.addSubview(widget)
         widget.fillInParent()

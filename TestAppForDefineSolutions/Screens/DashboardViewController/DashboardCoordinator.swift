@@ -14,13 +14,25 @@ class DashboardCoordinator: Coordinator {
     private let presenter: UINavigationController
     private var dashboardViewController: DashboardViewController?
     
+    private var bookInfoCoordinator: BookInfoCoordinator?
+    
     init(presenter: UINavigationController) {
         self.presenter = presenter
     }
     
     func start() {
         let dashboardViewController: DashboardViewController = DashboardViewController.instantiateViewController()
+        dashboardViewController.delegate = self
         presenter.pushViewController(dashboardViewController, animated: true)
         self.dashboardViewController = dashboardViewController
+    }
+}
+
+
+extension DashboardCoordinator: DashboardViewControllerDelegate {
+    func showBookInfo(book: Book) {
+        let bookInfoCoordinator = BookInfoCoordinator(presenter: presenter, book: book)
+        bookInfoCoordinator.start()
+        self.bookInfoCoordinator = bookInfoCoordinator
     }
 }
