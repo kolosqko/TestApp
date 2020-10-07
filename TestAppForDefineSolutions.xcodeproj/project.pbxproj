@@ -21,6 +21,8 @@
 		C13F8CFB2526444A0005EFFF /* SingleItemWidgetView.xib in Resources */ = {isa = PBXBuildFile; fileRef = C13F8CFA2526444A0005EFFF /* SingleItemWidgetView.xib */; };
 		C13F8CFD252648D60005EFFF /* WidgetViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C13F8CFC252648D60005EFFF /* WidgetViewModel.swift */; };
 		C13F8CFF252649070005EFFF /* WidgetType.swift in Sources */ = {isa = PBXBuildFile; fileRef = C13F8CFE252649070005EFFF /* WidgetType.swift */; };
+		C1512AFC252CCF1B009A4814 /* BookInfoCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1512AFB252CCF1B009A4814 /* BookInfoCoordinator.swift */; };
+		C1512AFE252CD4F7009A4814 /* WidgetViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1512AFD252CD4F7009A4814 /* WidgetViewDelegate.swift */; };
 		C1A05ED12525FDFD008C37CE /* TabBarIcons.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C1A05ED02525FDFD008C37CE /* TabBarIcons.xcassets */; };
 		C1A05ED52526077C008C37CE /* TabBarIcons.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1A05ED42526077C008C37CE /* TabBarIcons.swift */; };
 		C1A05ED825260D41008C37CE /* DashboardViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1A05ED725260D41008C37CE /* DashboardViewModel.swift */; };
@@ -30,6 +32,8 @@
 		C1A5D7CC2525ED06008A473A /* DashboardViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C1A5D7CB2525ED06008A473A /* DashboardViewController.storyboard */; };
 		C1A5D7CE2525ED31008A473A /* DashboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1A5D7CD2525ED31008A473A /* DashboardViewController.swift */; };
 		C1A5D7D02525EDA4008A473A /* DashboardCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1A5D7CF2525EDA4008A473A /* DashboardCoordinator.swift */; };
+		C1ADC158252CCDD6009E9584 /* BookInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1ADC156252CCDD6009E9584 /* BookInfoViewController.swift */; };
+		C1ADC15B252CCE50009E9584 /* BookInfoViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C1ADC15A252CCE50009E9584 /* BookInfoViewController.storyboard */; };
 		C1B27A7A252651B0007D5A1C /* CollectionWidgetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1B27A79252651B0007D5A1C /* CollectionWidgetView.swift */; };
 		C1B27A7C252651B9007D5A1C /* CollectionWidgetView.xib in Resources */ = {isa = PBXBuildFile; fileRef = C1B27A7B252651B9007D5A1C /* CollectionWidgetView.xib */; };
 		C1B27A8025265C4A007D5A1C /* CollectionWidgetViewCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1B27A7E25265C4A007D5A1C /* CollectionWidgetViewCollectionViewCell.swift */; };
@@ -54,6 +58,8 @@
 		C13F8CFA2526444A0005EFFF /* SingleItemWidgetView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SingleItemWidgetView.xib; sourceTree = "<group>"; };
 		C13F8CFC252648D60005EFFF /* WidgetViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WidgetViewModel.swift; sourceTree = "<group>"; };
 		C13F8CFE252649070005EFFF /* WidgetType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WidgetType.swift; sourceTree = "<group>"; };
+		C1512AFB252CCF1B009A4814 /* BookInfoCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookInfoCoordinator.swift; sourceTree = "<group>"; };
+		C1512AFD252CD4F7009A4814 /* WidgetViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WidgetViewDelegate.swift; sourceTree = "<group>"; };
 		C1A05ED02525FDFD008C37CE /* TabBarIcons.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = TabBarIcons.xcassets; sourceTree = "<group>"; };
 		C1A05ED42526077C008C37CE /* TabBarIcons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarIcons.swift; sourceTree = "<group>"; };
 		C1A05ED725260D41008C37CE /* DashboardViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardViewModel.swift; sourceTree = "<group>"; };
@@ -63,6 +69,8 @@
 		C1A5D7CB2525ED06008A473A /* DashboardViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = DashboardViewController.storyboard; sourceTree = "<group>"; };
 		C1A5D7CD2525ED31008A473A /* DashboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardViewController.swift; sourceTree = "<group>"; };
 		C1A5D7CF2525EDA4008A473A /* DashboardCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardCoordinator.swift; sourceTree = "<group>"; };
+		C1ADC156252CCDD6009E9584 /* BookInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookInfoViewController.swift; sourceTree = "<group>"; };
+		C1ADC15A252CCE50009E9584 /* BookInfoViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = BookInfoViewController.storyboard; sourceTree = "<group>"; };
 		C1B27A79252651B0007D5A1C /* CollectionWidgetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionWidgetView.swift; sourceTree = "<group>"; };
 		C1B27A7B252651B9007D5A1C /* CollectionWidgetView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CollectionWidgetView.xib; sourceTree = "<group>"; };
 		C1B27A7E25265C4A007D5A1C /* CollectionWidgetViewCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionWidgetViewCollectionViewCell.swift; sourceTree = "<group>"; };
@@ -152,6 +160,7 @@
 		C131586025250DCE00BBFA57 /* Screens */ = {
 			isa = PBXGroup;
 			children = (
+				C1ADC155252CCDA9009E9584 /* BookInfoViewController */,
 				C1A5D7C82525E5E4008A473A /* TabBar */,
 				C131586125250DE300BBFA57 /* DashboardViewController */,
 			);
@@ -205,6 +214,7 @@
 				C13F8CF225263FA00005EFFF /* WidgetView.swift */,
 				C13F8CFC252648D60005EFFF /* WidgetViewModel.swift */,
 				C13F8CFE252649070005EFFF /* WidgetType.swift */,
+				C1512AFD252CD4F7009A4814 /* WidgetViewDelegate.swift */,
 			);
 			path = DashboardViewModels;
 			sourceTree = "<group>";
@@ -215,6 +225,16 @@
 				C1A5D7C92525E5FE008A473A /* TabBarCoordinator.swift */,
 			);
 			path = TabBar;
+			sourceTree = "<group>";
+		};
+		C1ADC155252CCDA9009E9584 /* BookInfoViewController */ = {
+			isa = PBXGroup;
+			children = (
+				C1ADC156252CCDD6009E9584 /* BookInfoViewController.swift */,
+				C1ADC15A252CCE50009E9584 /* BookInfoViewController.storyboard */,
+				C1512AFB252CCF1B009A4814 /* BookInfoCoordinator.swift */,
+			);
+			path = BookInfoViewController;
 			sourceTree = "<group>";
 		};
 		C1B27A772526510A007D5A1C /* SingleItemWidgetView */ = {
@@ -305,6 +325,7 @@
 			files = (
 				C13F8CEE25263CCF0005EFFF /* DashboardCollectionViewCell.xib in Resources */,
 				C1A05ED12525FDFD008C37CE /* TabBarIcons.xcassets in Resources */,
+				C1ADC15B252CCE50009E9584 /* BookInfoViewController.storyboard in Resources */,
 				C1A5D7CC2525ED06008A473A /* DashboardViewController.storyboard in Resources */,
 				C1CA2FC025273576008D2EFD /* BooksAssets.xcassets in Resources */,
 				C13F8CFB2526444A0005EFFF /* SingleItemWidgetView.xib in Resources */,
@@ -323,6 +344,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C13F8CFD252648D60005EFFF /* WidgetViewModel.swift in Sources */,
+				C1ADC158252CCDD6009E9584 /* BookInfoViewController.swift in Sources */,
 				C1A05EDA25260F7A008C37CE /* SingleItemWidgetViewModel.swift in Sources */,
 				C131584B25250BEA00BBFA57 /* AppDelegate.swift in Sources */,
 				C1A5D7CE2525ED31008A473A /* DashboardViewController.swift in Sources */,
@@ -330,6 +352,7 @@
 				C1A5D7CA2525E5FE008A473A /* TabBarCoordinator.swift in Sources */,
 				C13F8CFF252649070005EFFF /* WidgetType.swift in Sources */,
 				C1A05ED825260D41008C37CE /* DashboardViewModel.swift in Sources */,
+				C1512AFC252CCF1B009A4814 /* BookInfoCoordinator.swift in Sources */,
 				C1B27A7A252651B0007D5A1C /* CollectionWidgetView.swift in Sources */,
 				C1A5D7C72525E2DA008A473A /* AppCoordinator.swift in Sources */,
 				C1A05ED52526077C008C37CE /* TabBarIcons.swift in Sources */,
@@ -339,6 +362,7 @@
 				C1B27A8025265C4A007D5A1C /* CollectionWidgetViewCollectionViewCell.swift in Sources */,
 				C13F8CF9252643E90005EFFF /* SingleItemWidgetView.swift in Sources */,
 				C13F8CED25263CCF0005EFFF /* DashboardCollectionViewCell.swift in Sources */,
+				C1512AFE252CD4F7009A4814 /* WidgetViewDelegate.swift in Sources */,
 				C1A5D7D02525EDA4008A473A /* DashboardCoordinator.swift in Sources */,
 				C13F8CF325263FA00005EFFF /* WidgetView.swift in Sources */,
 			);

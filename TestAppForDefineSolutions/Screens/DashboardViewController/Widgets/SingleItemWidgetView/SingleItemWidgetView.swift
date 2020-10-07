@@ -18,6 +18,8 @@ class SingleItemWidgetView: UIView, WidgetView {
         }
     }
     
+    var delegate: WidgetViewDelegate?
+    
     func setupWidget() {
         guard let viewModel = viewModel as? SingleItemWidgetViewModel else {
             return

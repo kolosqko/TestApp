@@ -8,6 +8,8 @@
 
 import UIKit
 
+
+
 class CollectionWidgetView: UIView, WidgetView  {
     
     private let identifier = "CollectionWidgetViewCollectionViewCell"
@@ -17,6 +19,8 @@ class CollectionWidgetView: UIView, WidgetView  {
             setupWidget()
         }
     }
+    
+    var delegate: WidgetViewDelegate?
     
     func setupWidget() {
         registerReusebleCell()
@@ -73,9 +77,19 @@ extension CollectionWidgetView: UICollectionViewDataSource {
 
 
 extension CollectionWidgetView: UICollectionViewDelegate, UICollectionViewDelegateFlowLayout {
+    
+    
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         let height = collectionView.bounds.height
         let width = height / 1.8
         return CGSize(width: width, height: height)
     }
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        guard  let book = (viewModel as? CollectionWidgetViewModel)?.items[indexPath.item] else {
+            return
+        }
+        self.delegate?.bookWasSelected(book: book)
+    }
+    
 }

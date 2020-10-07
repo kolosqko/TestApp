@@ -18,9 +18,24 @@
             <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
                 <rect key="frame" x="0.0" y="0.0" width="432" height="209"/>
                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ryv-xt-wfi">
+                        <rect key="frame" x="0.0" y="0.0" width="432" height="209"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </view>
+                </subviews>
             </view>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="ryv-xt-wfi" secondAttribute="bottom" id="7KM-gt-22T"/>
+                <constraint firstAttribute="trailing" secondItem="ryv-xt-wfi" secondAttribute="trailing" id="AqT-FW-VzC"/>
+                <constraint firstItem="ryv-xt-wfi" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="lkh-H2-70p"/>
+                <constraint firstItem="ryv-xt-wfi" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="qpw-xb-9aw"/>
+            </constraints>
             <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
             <size key="customSize" width="432" height="209"/>
+            <connections>
+                <outlet property="widgetSuperView" destination="ryv-xt-wfi" id="Sna-id-Fv3"/>
+            </connections>
             <point key="canvasLocation" x="443.19999999999999" y="210.94452773613196"/>
         </collectionViewCell>
     </objects>
