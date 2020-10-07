@@ -48,6 +48,6 @@ enum WidgetType {
         switch self {
         case .singleItem: return 48 / 1125
         case .collection: return 0
-    }
+        }
     }
 }

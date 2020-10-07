@@ -106,7 +106,11 @@ extension DashboardViewController: UICollectionViewDelegate, UICollectionViewDel
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
-        return 20
+        let width = view.bounds.width
+        
+        // 60 / 685 - approximate proportions of spacing in example
+        let spacing = (WidgetType.singleItem.widgetProportions * width) * ( 60 / 685)
+        return spacing
     }
 }
 
