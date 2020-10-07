@@ -104,6 +104,10 @@ extension DashboardViewController: UICollectionViewDelegate, UICollectionViewDel
         let height = width * cellViewModel.widgetType.widgetProportions
         return CGSize(width: width, height: height)
     }
+    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
+        return 20
+    }
 }
 
 
