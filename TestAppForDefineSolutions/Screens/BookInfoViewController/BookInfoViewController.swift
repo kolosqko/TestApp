@@ -26,6 +26,6 @@ class BookInfoViewController: UIViewController, StoryboardInstantiable {
         
         bookCoverImageView.image = viewModel?.poster
         bookTitleLabel.text = viewModel?.title
-        authorNameLabel.text = viewModel?.author
+        authorNameLabel.text = "by \(viewModel?.author ?? "")"
     }
 }

@@ -39,6 +39,7 @@
 		C1B27A8025265C4A007D5A1C /* CollectionWidgetViewCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1B27A7E25265C4A007D5A1C /* CollectionWidgetViewCollectionViewCell.swift */; };
 		C1B27A8125265C4A007D5A1C /* CollectionWidgetViewCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C1B27A7F25265C4A007D5A1C /* CollectionWidgetViewCollectionViewCell.xib */; };
 		C1CA2FC025273576008D2EFD /* BooksAssets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C1CA2FBF25273576008D2EFD /* BooksAssets.xcassets */; };
+		C1D39226252F726100949433 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1D39225252F726100949433 /* Constants.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -76,6 +77,7 @@
 		C1B27A7E25265C4A007D5A1C /* CollectionWidgetViewCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionWidgetViewCollectionViewCell.swift; sourceTree = "<group>"; };
 		C1B27A7F25265C4A007D5A1C /* CollectionWidgetViewCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CollectionWidgetViewCollectionViewCell.xib; sourceTree = "<group>"; };
 		C1CA2FBF25273576008D2EFD /* BooksAssets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = BooksAssets.xcassets; sourceTree = "<group>"; };
+		C1D39225252F726100949433 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -126,6 +128,7 @@
 				C131584A25250BEA00BBFA57 /* AppDelegate.swift */,
 				C131585625250BEC00BBFA57 /* Info.plist */,
 				C1A5D7C62525E2DA008A473A /* AppCoordinator.swift */,
+				C1D39225252F726100949433 /* Constants.swift */,
 			);
 			path = Application;
 			sourceTree = "<group>";
@@ -349,6 +352,7 @@
 				C131584B25250BEA00BBFA57 /* AppDelegate.swift in Sources */,
 				C1A5D7CE2525ED31008A473A /* DashboardViewController.swift in Sources */,
 				C13F8CF6252641860005EFFF /* Utils.swift in Sources */,
+				C1D39226252F726100949433 /* Constants.swift in Sources */,
 				C1A5D7CA2525E5FE008A473A /* TabBarCoordinator.swift in Sources */,
 				C13F8CFF252649070005EFFF /* WidgetType.swift in Sources */,
 				C1A05ED825260D41008C37CE /* DashboardViewModel.swift in Sources */,

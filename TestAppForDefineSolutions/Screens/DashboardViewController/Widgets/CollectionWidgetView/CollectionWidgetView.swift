@@ -81,9 +81,15 @@ extension CollectionWidgetView: UICollectionViewDelegate, UICollectionViewDelega
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         let height = collectionView.bounds.height
-        let width = height / 1.8
+        let width = height / Constants.collectionWidgetCellProportions
         return CGSize(width: width, height: height)
     }
+    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumInteritemSpacingForSectionAt section: Int) -> CGFloat {
+        return (collectionView.bounds.height / Constants.collectionWidgetCellProportions) * Constants.collectionWidgetCellSpacingProportions
+    }
+    
+    
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         guard  let book = (viewModel as? CollectionWidgetViewModel)?.items[indexPath.item] else {

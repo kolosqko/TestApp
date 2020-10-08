@@ -19,6 +19,7 @@ class DashboardViewController: UIViewController, StoryboardInstantiable {
     
     private let cellIdentifier = "DashboardCollectionViewCell"
     
+    @IBOutlet weak var searchBar: UISearchBar!
     private var viewModel: DashboardViewModel? = DashboardViewModel()
     
     var delegate: DashboardViewControllerDelegate?
@@ -53,6 +54,17 @@ class DashboardViewController: UIViewController, StoryboardInstantiable {
             singleItemCellNib,
             forCellWithReuseIdentifier: cellIdentifier
         )
+    }
+    
+    
+    private func setupSearchBarConstraints() {
+        guard
+            let leadingConstraint = searchBar.constraints.first(where: {$0.firstAttribute == .leading}),
+            let trailingConstraint = searchBar.constraints.first(where: {$0.firstAttribute == .trailing})  else {
+                return
+        }
+        leadingConstraint.constant = Constants.paddingProportions * view.bounds.width
+        trailingConstraint.constant = Constants.paddingProportions * view.bounds.width
     }
 
 }
@@ -109,7 +121,7 @@ extension DashboardViewController: UICollectionViewDelegate, UICollectionViewDel
         let width = view.bounds.width
         
         // 60 / 685 - approximate proportions of spacing in example
-        let spacing = (WidgetType.singleItem.widgetProportions * width) * ( 60 / 685)
+        let spacing = (WidgetType.singleItem.widgetProportions * width) * ( Constants.widgetSpacingProportions )
         return spacing
     }
 }
