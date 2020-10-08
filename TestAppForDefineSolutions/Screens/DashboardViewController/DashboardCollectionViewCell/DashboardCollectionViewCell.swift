@@ -41,7 +41,6 @@ class DashboardCollectionViewCell: UICollectionViewCell {
         }
         leadingConstraint.constant = viewModel.widgetType.widgetLeftPaddingProportion * self.bounds.width
         trailingConstraint.constant = viewModel.widgetType.widjetRightPaddingProportion * self.bounds.width
-        
     }
 
 }

@@ -14,6 +14,7 @@ final class Constants {
     static let singleItemWidgetProportions: CGFloat = 685 / 1125
     static let collectionWidgetProportions: CGFloat = 764.8 / 1125
     static let paddingProportions: CGFloat =  48 / 1125
-    static let widgetSpacing: CGFloat = 60 / 685
-    static let collectionWidgetSpacing: CGFloat = 1.8
+    static let widgetSpacingProportions: CGFloat = 60 / 685
+    static let collectionWidgetCellProportions: CGFloat = 1.8
+    static let collectionWidgetCellSpacingProportions: CGFloat = 53 / 382
 }

@@ -121,7 +121,7 @@ extension DashboardViewController: UICollectionViewDelegate, UICollectionViewDel
         let width = view.bounds.width
         
         // 60 / 685 - approximate proportions of spacing in example
-        let spacing = (WidgetType.singleItem.widgetProportions * width) * ( Constants.widgetSpacing )
+        let spacing = (WidgetType.singleItem.widgetProportions * width) * ( Constants.widgetSpacingProportions )
         return spacing
     }
 }

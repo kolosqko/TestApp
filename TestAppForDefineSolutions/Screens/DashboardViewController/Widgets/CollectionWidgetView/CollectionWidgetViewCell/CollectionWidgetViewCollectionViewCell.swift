@@ -24,7 +24,7 @@ class CollectionWidgetViewCollectionViewCell: UICollectionViewCell {
         guard let viewModel = viewModel else {
             return
         }
-        authorLabel.text = viewModel.author
+        authorLabel.text = "by \(viewModel.author)"
         titleLabel.text = viewModel.title
         posterImageView.image = viewModel.poster
     }
