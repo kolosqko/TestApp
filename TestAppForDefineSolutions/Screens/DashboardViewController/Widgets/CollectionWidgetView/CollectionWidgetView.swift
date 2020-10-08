@@ -81,7 +81,7 @@ extension CollectionWidgetView: UICollectionViewDelegate, UICollectionViewDelega
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         let height = collectionView.bounds.height
-        let width = height / 1.8
+        let width = height / Constants.collectionWidgetSpacing
         return CGSize(width: width, height: height)
     }
     

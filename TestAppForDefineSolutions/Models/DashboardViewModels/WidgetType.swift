@@ -33,20 +33,20 @@ enum WidgetType {
     
     var widgetProportions: CGFloat {
         switch self {
-        case .singleItem: return 685 / 1125
-        case .collection: return 764.8 / 1125
+        case .singleItem: return Constants.singleItemWidgetProportions
+        case .collection: return Constants.collectionWidgetProportions
         }
     }
     
     var widgetLeftPaddingProportion: CGFloat {
         switch self {
-        case .singleItem, .collection: return 48 / 1125
+        case .singleItem, .collection: return Constants.paddingProportions
         }
     }
     
     var widjetRightPaddingProportion: CGFloat {
         switch self {
-        case .singleItem: return 48 / 1125
+        case .singleItem: return Constants.paddingProportions
         case .collection: return 0
         }
     }
